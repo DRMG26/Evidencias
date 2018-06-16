@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full Stack</title>
+	<script type="text/javascript">
+		var numero_1=10;
+		var numero_2=50;
+		var Resultado = numero_1 + numero_2;
+		document.write(Resultado);
+        
+        document.write("<hr>");
+
+		var Meses=["Enero","Febrero","Marzo", "Abril", "Mayo", "Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+		var es=prompt("Selecione un mes", "1-12");
+
+		if (es < 13) {
+			document.write(Meses[es-1]);
+		}else{
+			document.write("Selecione un mes valido");
+		}
+
+		for(i in Meses)  {
+		  alert(Meses[i]);
+		}
+
+		var mensaje = "Hola, prueba del for";
+        var e=prompt("Diita cuando quieres qque se repia el bucle")
+		for(var i = 0; i < e; i++) {
+		  alert(i +1+ " de " + e);
+		}
+
+
+		var nombre = prompt("Escribe tu nombre");
+ 
+		if(nombre == "") {
+		  alert("Aún no nos has dicho tu nombre");
+		}
+		else {
+		  alert("Hemos guardado tu nombre");
+		}
+
+		var edad=prompt("Cual es tu edad)")
+
+		if(edad < 12) {
+		  alert("Eres Menor dedad");
+		}
+		else if(edad < 19) {
+		  alert("Eres un adolescente");
+		}
+		else if(edad < 35) {
+		  alert("Ya cas para la tumba XD");
+		}
+		else {
+		  alert("Piensa en cuidarte un poco más");
+		}
+
+
+		document.write("<hr>");
+		var valor1 = true;
+        var valor2 = false;
+        document.write(resultado = valor1 && valor2); 
+
+        document.write("<hr>");
+        valor1 = true;
+        valor2 = true;
+        document.write(resultado = valor1 && valor2); 
+
+        document.write("<hr>");
+
+        valor1 = true;
+        valor2 = false;
+        document.write(resultado = valor1 || valor2); // resultado = true
+
+        document.write("<hr>");
+
+        valor1 = false;
+        valor2 = false;
+        document.write(resultado = valor1 || valor2); // resultado = false
+
+        document.write("<hr>");
+        
+        var numero1 = 10;
+        var numero2 = 5;
+
+        //Es el residuo de los decimales 0.00
+        document.write(resultado = numero1 % numero2); // resultado = 0
+        document.write("<hr>");
+
+        //0.4
+        numero1 = 9;
+        numero2 = 5;
+        document.write(resultado = numero1 % numero2);//resultado=4 
+
+        document.write("<hr>");
+        document.write(numero1 += 3);  // numero1 = numero1 + 3 = 8
+        document.write("<br>");
+        document.write(numero1 -= 1);  // numero1 = numero1 - 1 = 4
+        document.write("<br>");
+        document.write(numero1 *= 2);   // numero1 = numero1 * 2 = 10
+        document.write("<br>");
+        document.write(numero1 /= 5);   // numero1 = numero1 / 5 = 1
+        document.write("<br>");
+        document.write(numero1 %= 4);   // numero1 = numero1 % 4 = 1
+        document.write("<hr>");
+
+        
+        numero1 = 3;
+        numero2 = 5;
+        document.write(resultado = numero1 > numero2); // resultado = falseresultado = numero1 < numero2; // resultado = true
+        document.write("<br>");
+        numero1 = 5;
+        numero2 = 5;
+        document.write(resultado = numero1 >= numero2); // resultado = true
+        document.write("<br>");
+		document.write(resultado = numero1 <= numero2); // resultado = true
+		document.write("<br>");
+		document.write(resultado = numero1 == numero2); // resultado = true
+		document.write("<br>");
+		document.write(resultado = numero1 != numero2); // resultado = false
+		document.write("<hr>");
+
+
+		// El operador "=" asigna valores
+		var numero1 = 5;
+		document.write(resultado = numero1 = 3);  // numero1 = 3 y resultado = 3
+		document.write("<br>");
+		// El operador "==" compara variables
+		var numero1 = 5;
+		document.write(resultado = numero1 == 3); // numero1 = 5 y resultado = false
+        document.write("<br>");
+
+		var texto1 = "hola";
+		var texto2 = "hola";
+		var texto3 = "adios";
+
+		document.write(resultado = texto1 == texto3); // resultado = false
+		document.write("<br>");
+		document.write(resultado = texto1 != texto2); // resultado = false
+		document.write("<br>");
+		document.write(resultado = texto3 >= texto2); // resultado = false
+		document.write("<hr>");
+
+		var mostrarMensaje = true;
+
+		if(mostrarMensaje) {
+		    alert("Hola Mundo");
+		    document.write("lo mostro");
+		}else{
+			document.write("no lo mostro");
+		}
+		document.write("<hr>");
+
+		if(mostrarMensaje == true) {
+		    alert("Segundo condicional con == ");
+		    document.write("lo mostro");
+		}else{
+			document.write("no lo mostro");
+		}
+
+		document.write("<hr>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
